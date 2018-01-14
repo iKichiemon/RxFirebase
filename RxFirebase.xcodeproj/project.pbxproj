@@ -450,6 +450,7 @@
 				1541A144200B228D0083D673 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1541A145200B228D0083D673 /* Build configuration list for PBXNativeTarget "RxFirebaseTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +459,7 @@
 				1541A147200B228D0083D673 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
