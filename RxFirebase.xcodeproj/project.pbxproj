@@ -20,6 +20,20 @@
 			remoteGlobalIDString = 1541A12D200B228D0083D673;
 			remoteInfo = RxFirebase;
 		};
+		1541A179200B26690083D673 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1541A174200B26680083D673 /* Demo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1541A151200B26680083D673;
+			remoteInfo = Demo;
+		};
+		1541A17B200B26690083D673 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1541A174200B26680083D673 /* Demo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1541A165200B26680083D673;
+			remoteInfo = DemoTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +43,7 @@
 		1541A137200B228D0083D673 /* RxFirebaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxFirebaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1541A13C200B228D0083D673 /* RxFirebaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxFirebaseTests.swift; sourceTree = "<group>"; };
 		1541A13E200B228D0083D673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1541A174200B26680083D673 /* Demo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Demo.xcodeproj; path = Demo/Demo.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +68,7 @@
 		1541A124200B228D0083D673 = {
 			isa = PBXGroup;
 			children = (
+				1541A174200B26680083D673 /* Demo.xcodeproj */,
 				1541A130200B228D0083D673 /* RxFirebase */,
 				1541A13B200B228D0083D673 /* RxFirebaseTests */,
 				1541A12F200B228D0083D673 /* Products */,
@@ -84,6 +100,15 @@
 				1541A13E200B228D0083D673 /* Info.plist */,
 			);
 			path = RxFirebaseTests;
+			sourceTree = "<group>";
+		};
+		1541A175200B26680083D673 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1541A17A200B26690083D673 /* Demo.app */,
+				1541A17C200B26690083D673 /* DemoTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +193,12 @@
 			mainGroup = 1541A124200B228D0083D673;
 			productRefGroup = 1541A12F200B228D0083D673 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1541A175200B26680083D673 /* Products */;
+					ProjectRef = 1541A174200B26680083D673 /* Demo.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1541A12D200B228D0083D673 /* RxFirebase */,
@@ -175,6 +206,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1541A17A200B26690083D673 /* Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Demo.app;
+			remoteRef = 1541A179200B26690083D673 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1541A17C200B26690083D673 /* DemoTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DemoTests.xctest;
+			remoteRef = 1541A17B200B26690083D673 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1541A12C200B228D0083D673 /* Resources */ = {

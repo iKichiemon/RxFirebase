@@ -1,0 +1,9 @@
+Pods
+Podfile.lock
+Gemfile.lock
+vendor
+.bundle
+build
+*.ipa
+*.dSYM.*
+xcuserdata
