@@ -1,0 +1,33 @@
+{
+  "name": "RxFirebase",
+  "version": "0.1.0",
+  "summary": "A short description of RxFirebase.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/iKichiemon/RxFirebase",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "iKichiemon": "1990.iku.t@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/iKichiemon/RxFirebase.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "RxFirebase/Classes/**/*",
+  "dependencies": {
+    "RxSwift": [
+      "~> 4.0"
+    ],
+    "RxCocoa": [
+      "~> 4.0"
+    ],
+    "Firebase": [
+      "~> 4.8"
+    ]
+  }
+}

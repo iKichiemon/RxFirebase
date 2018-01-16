@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxFirebase
 
 class ViewController: UIViewController {
 
@@ -18,6 +19,8 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        let t = Test.init(a: "a")
+        print(t)
     }
 
 }
