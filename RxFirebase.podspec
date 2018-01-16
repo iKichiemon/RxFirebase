@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RxFirebase'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of RxFirebase.'
+  s.summary          = 'Extension Firebase for Rx.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -41,4 +41,11 @@ TODO: Add long description of the pod here.
   s.dependency 'RxSwift', '~> 4.0'
   s.dependency 'RxCocoa', '~> 4.0'
   s.dependency 'Firebase', '~> 4.8'
+  s.dependency 'Firebase/AdMob', '~> 4.8'
+  s.dependency 'Firebase/Database', '~> 4.8'
+  s.dependency 'Firebase/RemoteConfig', '~> 4.8'
+  s.dependency 'Firebase/Auth', '~> 4.8'
+  s.dependency 'Firebase/Storage', '~> 4.8'
+  s.dependency 'Firebase/Firestore', '~> 4.8'
+
 end

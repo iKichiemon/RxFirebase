@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-        let t = Test.init(a: "a")
+        let t = Test(a: "a")
         print(t)
     }
 

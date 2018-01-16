@@ -1,7 +1,7 @@
 {
   "name": "RxFirebase",
   "version": "0.1.0",
-  "summary": "A short description of RxFirebase.",
+  "summary": "Extension Firebase for Rx.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/iKichiemon/RxFirebase",
   "license": {
@@ -27,6 +27,24 @@
       "~> 4.0"
     ],
     "Firebase": [
+      "~> 4.8"
+    ],
+    "Firebase/AdMob": [
+      "~> 4.8"
+    ],
+    "Firebase/Database": [
+      "~> 4.8"
+    ],
+    "Firebase/RemoteConfig": [
+      "~> 4.8"
+    ],
+    "Firebase/Auth": [
+      "~> 4.8"
+    ],
+    "Firebase/Storage": [
+      "~> 4.8"
+    ],
+    "Firebase/Firestore": [
       "~> 4.8"
     ]
   }
