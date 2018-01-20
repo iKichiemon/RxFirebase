@@ -1,5 +1,6 @@
 import RxSwift
 import FirebaseStorage
+import FirebaseAuth
 
 public extension Reactive where Base: StorageReference {
     

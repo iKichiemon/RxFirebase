@@ -1,57 +1,57 @@
 PODS:
-  - BoringSSL (9.1):
-    - BoringSSL/Implementation (= 9.1)
-    - BoringSSL/Interface (= 9.1)
-  - BoringSSL/Implementation (9.1):
-    - BoringSSL/Interface (= 9.1)
-  - BoringSSL/Interface (9.1)
+  - BoringSSL (9.2):
+    - BoringSSL/Implementation (= 9.2)
+    - BoringSSL/Interface (= 9.2)
+  - BoringSSL/Implementation (9.2):
+    - BoringSSL/Interface (= 9.2)
+  - BoringSSL/Interface (9.2)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - Firebase (4.8.0):
-    - Firebase/Core (= 4.8.0)
-  - Firebase/AdMob (4.8.0):
+  - Firebase (4.8.1):
+    - Firebase/Core (= 4.8.1)
+  - Firebase/AdMob (4.8.1):
     - Firebase/Core
     - Google-Mobile-Ads-SDK (= 7.27.0)
-  - Firebase/Auth (4.8.0):
+  - Firebase/Auth (4.8.1):
     - Firebase/Core
-    - FirebaseAuth (= 4.4.1)
-  - Firebase/Core (4.8.0):
-    - FirebaseAnalytics (= 4.0.5)
-    - FirebaseCore (= 4.0.13)
-  - Firebase/Database (4.8.0):
+    - FirebaseAuth (= 4.4.2)
+  - Firebase/Core (4.8.1):
+    - FirebaseAnalytics (= 4.0.7)
+    - FirebaseCore (= 4.0.14)
+  - Firebase/Database (4.8.1):
     - Firebase/Core
-    - FirebaseDatabase (= 4.1.3)
-  - Firebase/Firestore (4.8.0):
+    - FirebaseDatabase (= 4.1.4)
+  - Firebase/Firestore (4.8.1):
     - Firebase/Core
-    - FirebaseFirestore (= 0.9.4)
-  - Firebase/RemoteConfig (4.8.0):
+    - FirebaseFirestore (= 0.10.0)
+  - Firebase/RemoteConfig (4.8.1):
     - Firebase/Core
-    - FirebaseRemoteConfig (= 2.1.0)
-  - Firebase/Storage (4.8.0):
+    - FirebaseRemoteConfig (= 2.1.1)
+  - Firebase/Storage (4.8.1):
     - Firebase/Core
-    - FirebaseStorage (= 2.1.1)
+    - FirebaseStorage (= 2.1.2)
   - FirebaseABTesting (1.0.0):
     - FirebaseCore (~> 4.0)
     - Protobuf (~> 3.1)
-  - FirebaseAnalytics (4.0.5):
+  - FirebaseAnalytics (4.0.7):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
     - nanopb (~> 0.3)
-  - FirebaseAuth (4.4.1):
+  - FirebaseAuth (4.4.2):
     - FirebaseAnalytics (~> 4.0)
     - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
     - GTMSessionFetcher/Core (~> 1.1)
-  - FirebaseCore (4.0.13):
+  - FirebaseCore (4.0.14):
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
-  - FirebaseDatabase (4.1.3):
+  - FirebaseDatabase (4.1.4):
     - FirebaseAnalytics (~> 4.0)
     - FirebaseCore (~> 4.0)
     - leveldb-library (~> 1.18)
-  - FirebaseFirestore (0.9.4):
+  - FirebaseFirestore (0.10.0):
     - FirebaseAnalytics (~> 4.0)
     - FirebaseCore (~> 4.0)
     - gRPC-ProtoRPC (~> 1.0)
@@ -59,13 +59,14 @@ PODS:
     - Protobuf (~> 3.1)
   - FirebaseInstanceID (2.0.8):
     - FirebaseCore (~> 4.0)
-  - FirebaseRemoteConfig (2.1.0):
+  - FirebaseRemoteConfig (2.1.1):
     - FirebaseABTesting (~> 1.0)
     - FirebaseAnalytics (~> 4.0)
+    - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
     - Protobuf (~> 3.1)
-  - FirebaseStorage (2.1.1):
+  - FirebaseStorage (2.1.2):
     - FirebaseAnalytics (~> 4.0)
     - FirebaseCore (~> 4.0)
     - GTMSessionFetcher/Core (~> 1.1)
@@ -137,18 +138,18 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BoringSSL: 84318770d120503ab1a6aaf1df777c5ca053697e
+  BoringSSL: f3d6b8ce199b9c450a8cfc14895d07a2627fc232
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  Firebase: 710decbbc6d9d48530e9a5dba3209740c3532e05
+  Firebase: 2721056b8885eef90233b03f37be64358d35d262
   FirebaseABTesting: d07d0ee833b842d5153549e4c7e2e2cb1c23a3f9
-  FirebaseAnalytics: 5b02a63ead2c3f0259cfc7f15e053e440587ecf8
-  FirebaseAuth: dc0dd403beca5b2b016aac89c2d0b8dad1c81926
-  FirebaseCore: 3c02ec652db3d03fdc8bc6d9154af3e20d64b6f5
-  FirebaseDatabase: 7088bfc4af2cc00231bb36e1404fc2d7509eb4dc
-  FirebaseFirestore: 0fb0301657759bdd7a4bc37a436e543a86b189ad
+  FirebaseAnalytics: 617afa8c26b57a0c3f11361b248bc9e17bfd8dfd
+  FirebaseAuth: bd2738c5c1e92b108ba5f7f7335908097a4e50bb
+  FirebaseCore: 2e0b98fb2d64ca8140136beff15772bdd14d2dd7
+  FirebaseDatabase: de4446507ccd3257fca37d16f40e1540324571fd
+  FirebaseFirestore: 713f0c555e7af5ac03d0fec0e2477c48857f4977
   FirebaseInstanceID: 81df5805a08001e69138664bdd02c6719a9ac80f
-  FirebaseRemoteConfig: 451fe8e9c43ac1e7a137ad2a42189bfc8c2c3ebc
-  FirebaseStorage: ab08d1c93a2feffa038fdd6693088b310ab1e6c6
+  FirebaseRemoteConfig: 3310f264fff78b6c2e78b24dcfc4c1b3d6766209
+  FirebaseStorage: 181bb543d39ee3c53e0558de7ba86b1286a0427f
   Google-Mobile-Ads-SDK: 83f7f890e638ce8f1debd440ea363338c9f6be3b
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   gRPC: 572520c17b794362388d5c95396329592a3c199b
@@ -162,9 +163,9 @@ SPEC CHECKSUMS:
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
-  RxFirebase: 79cba2ad487e48a3721f657e7ccd235d78559464
+  RxFirebase: 0e2f6c3cc928e7e0d06127de65db5aeaa2542ef8
   RxSwift: c6e3b1c7b325c7d121cd4327e9d98b7ed746b570
 
-PODFILE CHECKSUM: ff788af9a91c01a33d0e6412bccb0786a7d4fa75
+PODFILE CHECKSUM: 2453d06a953eb6a460806f30872f181b9fcff428
 
 COCOAPODS: 1.4.0.rc.1

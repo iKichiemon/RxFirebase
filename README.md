@@ -5,11 +5,17 @@
 [![License](https://img.shields.io/cocoapods/l/RxFirebase.svg?style=flat)](http://cocoapods.org/pods/RxFirebase)
 [![Platform](https://img.shields.io/cocoapods/p/RxFirebase.svg?style=flat)](http://cocoapods.org/pods/RxFirebase)
 
+This is Firebase extensions for RxSwift.
+
+It is compatible with FirebaseDatabase, Firestore, and FirebaseStorage.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+- Xcode9
 
 ## Installation
 

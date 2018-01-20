@@ -24,13 +24,13 @@
     "RxSwift": [
       "~> 4.0"
     ],
+    "Firebase": [
+      "~> 4.8"
+    ],
     "Firebase/Database": [
       "~> 4.8"
     ],
     "Firebase/Auth": [
-      "~> 4.8"
-    ],
-    "Firebase": [
       "~> 4.8"
     ],
     "Firebase/AdMob": [
@@ -45,11 +45,5 @@
     "Firebase/Firestore": [
       "~> 4.8"
     ]
-  },
-  "xcconfig": {
-    "FRAMEWORK_SEARCH_PATHS": "'$(PODS_ROOT)/FirebaseDatabase'"
-  },
-  "vendored_frameworks": [
-    "${PODS_ROOT}/FirebaseDatabase/Frameworks/FirebaseDatabase.framework"
-  ]
+  }
 }
