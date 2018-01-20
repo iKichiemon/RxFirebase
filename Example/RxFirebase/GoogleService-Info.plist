@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>849998928436-hf0ob1hd28vl9bsdoidhgh1qnr7l1t13.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.849998928436-hf0ob1hd28vl9bsdoidhgh1qnr7l1t13</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCqPpPen_SKh_XmHp6UBAKrAqteCjFqAxw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>849998928436</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.cocoapods.demo.RxFirebase-Example</string>
+	<key>PROJECT_ID</key>
+	<string>libraries-10b69</string>
+	<key>STORAGE_BUCKET</key>
+	<string>libraries-10b69.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:849998928436:ios:31e4da5a1e799d8c</string>
+	<key>DATABASE_URL</key>
+	<string>https://libraries-10b69.firebaseio.com</string>
+</dict>
+</plist>
