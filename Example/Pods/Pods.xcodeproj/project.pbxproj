@@ -180,6 +180,7 @@
 		1550AE32DC5ADF0FCB9BD311A4B5B1B3 /* version_set.h in Headers */ = {isa = PBXBuildFile; fileRef = 42594558283ED3372117E5D92D300ACB /* version_set.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		15555C5AAB80B296FEF1B05D566526B5 /* GRXNSBlockEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AFA984B16274746B7C6C57B0FDBC09 /* GRXNSBlockEnumerator.m */; };
 		157CDBB52010E90900E1698B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CDBB42010E90900E1698B /* Result.swift */; };
+		157CDBB92012E2C800E1698B /* Firestore+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157CDBB82012E2C700E1698B /* Firestore+Rx.swift */; };
 		157E734578C789C8D18F6191543706B2 /* version_edit.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A0EDDB284ED9BA9FDCA40DAEEFCF75 /* version_edit.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1599444611B399DE32D2CAC57F2A606D /* ext_dat.h in Headers */ = {isa = PBXBuildFile; fileRef = 778F357948C12C720635DDD9B4084942 /* ext_dat.h */; };
 		15B9DF360089CCE781E1DFD599B34275 /* transport_security.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2974E92EA314505E0311471BC3CB3609 /* transport_security.cc */; settings = {COMPILER_FLAGS = "-DGRPC_ARES=0 -fno-objc-arc"; }; };
@@ -3557,6 +3558,7 @@
 		14BDE30D7B7CC0C914F2C30B216DE4F8 /* uri_parser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = uri_parser.h; path = src/core/ext/filters/client_channel/uri_parser.h; sourceTree = "<group>"; };
 		156411168F5ECCEBECC65456B8EADD77 /* parsing.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = parsing.cc; path = src/core/ext/transport/chttp2/transport/parsing.cc; sourceTree = "<group>"; };
 		157CDBB42010E90900E1698B /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = RxFirebase/Classes/Result.swift; sourceTree = "<group>"; };
+		157CDBB82012E2C700E1698B /* Firestore+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Firestore+Rx.swift"; path = "RxFirebase/Classes/Firestore+Rx.swift"; sourceTree = "<group>"; };
 		15915907F533F891F3607DBBAFCAA339 /* load_balancer_api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = load_balancer_api.h; path = src/core/ext/filters/client_channel/lb_policy/grpclb/load_balancer_api.h; sourceTree = "<group>"; };
 		15A3469B9A99B5A0B1C311CE901C8B95 /* subprocess_windows.cc */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = subprocess_windows.cc; path = src/core/lib/support/subprocess_windows.cc; sourceTree = "<group>"; };
 		15CCFAD49C3648A326413B4204C867F9 /* RxFirebase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RxFirebase-dummy.m"; sourceTree = "<group>"; };
@@ -6933,6 +6935,7 @@
 		BB5A0A02E8CD0ADCBAAA994EED4A5D04 /* RxFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				157CDBB82012E2C700E1698B /* Firestore+Rx.swift */,
 				5F1D39F1FE458939FDE1735E5B100C14 /* FirebaseStorage+Rx.swift */,
 				157CDBB42010E90900E1698B /* Result.swift */,
 				A7C0B739212C31B14698CAE2390ED802 /* Pod */,
@@ -9799,6 +9802,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				157CDBB52010E90900E1698B /* Result.swift in Sources */,
+				157CDBB92012E2C800E1698B /* Firestore+Rx.swift in Sources */,
 				55D69A7EC63B3C4743AEE89ECD2BCB02 /* FirebaseStorage+Rx.swift in Sources */,
 				DA242109BC2F69A9A8C3B6841CBE2CE9 /* RxFirebase-dummy.m in Sources */,
 			);

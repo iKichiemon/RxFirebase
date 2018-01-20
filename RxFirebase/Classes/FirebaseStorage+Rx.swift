@@ -5,12 +5,12 @@ public extension Reactive where Base: StorageReference {
     
     // MARK - Download
     
-    public func downloadURL() -> Observable<URL> {
+    public func downloadURL() -> Single<URL> {
         return .create { observer in
             self.base.downloadURL {
                 switch Result($0, $1) {
-                case .success(let v): observer.onNext(v)
-                case .failure(let e): observer.onError(e)
+                case .success(let v): observer(.success(v))
+                case .failure(let e): observer(.error(e))
                 }
             }
             return Disposables.create()
@@ -19,24 +19,24 @@ public extension Reactive where Base: StorageReference {
     
     // MARK - Put
     
-    public func putData(uploadData: Data, metadata: StorageMetadata? = nil) -> Observable<StorageMetadata> {
+    public func putData(uploadData: Data, metadata: StorageMetadata? = nil) -> Single<StorageMetadata> {
         return .create { observer in
             self.base.putData(uploadData, metadata: metadata) {
                 switch Result($0, $1) {
-                case .success(let v): observer.onNext(v)
-                case .failure(let e): observer.onError(e)
+                case .success(let v): observer(.success(v))
+                case .failure(let e): observer(.error(e))
                 }
             }
             return Disposables.create()
         }
     }
     
-    public func putFile(from url: URL, metadata: StorageMetadata? = nil) -> Observable<StorageMetadata> {
+    public func putFile(from url: URL, metadata: StorageMetadata? = nil) -> Single<StorageMetadata> {
         return .create { observer in
             self.base.putFile(from: url, metadata: metadata) {
                 switch Result($0, $1) {
-                case .success(let v): observer.onNext(v)
-                case .failure(let e): observer.onError(e)
+                case .success(let v): observer(.success(v))
+                case .failure(let e): observer(.error(e))
                 }
             }
             return Disposables.create()
@@ -71,13 +71,13 @@ public extension Reactive where Base: StorageReference {
     
     // MARK - Delete
     
-    public func delete() -> Observable<Void> {
+    public func delete() -> Single<Void> {
         return .create { observer in
             self.base.delete { maybeError in
                 if let error = maybeError {
-                    observer.onError(error)
+                    observer(.error(error))
                 } else {
-                    observer.onNext(())
+                    observer(.success(()))
                 }
             }
             return Disposables.create()
