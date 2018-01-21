@@ -55,7 +55,7 @@ extension Reactive where Base: DatabaseReference {
         }
     }
     
-    public func observe(eventType: DataEventType) -> Observable<(DataSnapshot, String?)> {
+    public func observeAndPreviousSiblingKey(eventType: DataEventType) -> Observable<(DataSnapshot, String?)> {
         return .create { observer in
             let refHandle = self.base.observe(eventType, andPreviousSiblingKeyWith: {  observer.onNext(($0, $1)) })
             return Disposables.create {
