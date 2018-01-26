@@ -201,15 +201,7 @@ Some files from Intel carry the following license:
 
 Copyright 2018 Google
 
-## FirebaseABTesting
-
-Copyright 2017 Google
-
 ## FirebaseAnalytics
-
-Copyright 2018 Google
-
-## FirebaseAuth
 
 Copyright 2018 Google
 
@@ -228,10 +220,6 @@ Copyright 2018 Google
 ## FirebaseInstanceID
 
 Copyright 2017 Google
-
-## FirebaseRemoteConfig
-
-Copyright 2018 Google
 
 ## FirebaseStorage
 
@@ -442,10 +430,6 @@ Copyright 2018 Google
    See the License for the specific language governing permissions and
    limitations under the License.
 
-
-## Google-Mobile-Ads-SDK
-
-Copyright 2017 Google
 
 ## GoogleToolboxForMac
 

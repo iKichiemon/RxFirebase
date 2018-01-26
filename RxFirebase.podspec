@@ -36,17 +36,17 @@ TODO: Add long description of the pod here.
   #   'RxFirebase' => ['RxFirebase/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/**/*.h'
   #s.frameworks = 'UIKit', 'MapKit', 'VectorKit'
   
-  s.static_framework = true
+  #s.static_framework = true
   s.dependency 'RxSwift', '~> 4.0'
   s.dependency 'Firebase', '~> 4.8'
   s.dependency 'Firebase/Database'
-  s.dependency 'Firebase/Auth', '~> 4.8'
-  s.dependency 'Firebase/AdMob', '~> 4.8'
+  #s.dependency 'Firebase/Auth', '~> 4.8'
+  #s.dependency 'Firebase/AdMob', '~> 4.8'
   s.dependency 'Firebase/Database', '~> 4.8'
-  s.dependency 'Firebase/RemoteConfig', '~> 4.8'
+  #s.dependency 'Firebase/RemoteConfig', '~> 4.8'
   s.dependency 'Firebase/Storage', '~> 4.8'
   s.dependency 'Firebase/Firestore', '~> 4.8'
 

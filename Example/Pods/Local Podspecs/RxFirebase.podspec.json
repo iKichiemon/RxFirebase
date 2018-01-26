@@ -30,15 +30,6 @@
     "Firebase/Database": [
       "~> 4.8"
     ],
-    "Firebase/Auth": [
-      "~> 4.8"
-    ],
-    "Firebase/AdMob": [
-      "~> 4.8"
-    ],
-    "Firebase/RemoteConfig": [
-      "~> 4.8"
-    ],
     "Firebase/Storage": [
       "~> 4.8"
     ],
