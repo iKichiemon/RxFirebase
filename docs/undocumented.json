@@ -1,0 +1,243 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/FirebaseDatabase+Rx.swift",
+      "line": 6,
+      "symbol": "Reactive.runTransaction(block:withLocalEvents:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/FirebaseDatabase+Rx.swift",
+      "line": 18,
+      "symbol": "Reactive.removeValue()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/FirebaseDatabase+Rx.swift",
+      "line": 30,
+      "symbol": "Reactive.updateChildValues(values:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/FirebaseDatabase+Rx.swift",
+      "line": 42,
+      "symbol": "Reactive.observeSingleEvent(eventType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/FirebaseDatabase+Rx.swift",
+      "line": 49,
+      "symbol": "Reactive.observe(eventType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/FirebaseDatabase+Rx.swift",
+      "line": 58,
+      "symbol": "Reactive.observeAndPreviousSiblingKey(eventType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/FirebaseDatabase+Rx.swift",
+      "line": 67,
+      "symbol": "Reactive.setValue(value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/FirebaseDatabase+Rx.swift",
+      "line": 79,
+      "symbol": "Reactive.setValue(value:andPriority:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/FirebaseStorage+Rx.swift",
+      "line": 8,
+      "symbol": "Reactive.downloadURL()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/FirebaseStorage+Rx.swift",
+      "line": 22,
+      "symbol": "Reactive.putData(uploadData:metadata:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/FirebaseStorage+Rx.swift",
+      "line": 34,
+      "symbol": "Reactive.putFile(from:metadata:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/FirebaseStorage+Rx.swift",
+      "line": 48,
+      "symbol": "Reactive.getData(maxSize:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/FirebaseStorage+Rx.swift",
+      "line": 60,
+      "symbol": "Reactive.getMetadata()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/FirebaseStorage+Rx.swift",
+      "line": 74,
+      "symbol": "Reactive.delete()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/FirebaseStorage+Rx.swift",
+      "line": 89,
+      "symbol": "Reactive.updateMetadata(updateMetadata:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/FirebaseStorage+Rx.swift",
+      "line": 103,
+      "symbol": "Reactive.write(toFile:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/Firestore+Rx.swift",
+      "line": 8,
+      "symbol": "Reactive.TransactionError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/Firestore+Rx.swift",
+      "line": 9,
+      "symbol": "Reactive.TransactionError.cannotGetObject",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/Firestore+Rx.swift",
+      "line": 12,
+      "symbol": "Reactive.runTransaction(updateBlock:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/Firestore+Rx.swift",
+      "line": 30,
+      "symbol": "Reactive.commit()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/Firestore+Rx.swift",
+      "line": 48,
+      "symbol": "Reactive.updateData(fields:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/Firestore+Rx.swift",
+      "line": 61,
+      "symbol": "Reactive.setData(documentData:merge:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/Firestore+Rx.swift",
+      "line": 74,
+      "symbol": "Reactive.setData(documentData:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/Firestore+Rx.swift",
+      "line": 87,
+      "symbol": "Reactive.addSnapshotListener(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/Firestore+Rx.swift",
+      "line": 107,
+      "symbol": "Reactive.addDocuments(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/Firestore+Rx.swift",
+      "line": 120,
+      "symbol": "Reactive.getDocuments()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/Firestore+Rx.swift",
+      "line": 137,
+      "symbol": "Reactive.addSnapshotListener()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/Firestore+Rx.swift",
+      "line": 141,
+      "symbol": "Reactive.addSnapshotListener(includeMetadataChanges:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/Result.swift",
+      "line": 3,
+      "symbol": "Result",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/Result.swift",
+      "line": 4,
+      "symbol": "Result.success(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/Result.swift",
+      "line": 5,
+      "symbol": "Result.failure(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/Result.swift",
+      "line": 7,
+      "symbol": "Result.ResultError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/Result.swift",
+      "line": 8,
+      "symbol": "Result.ResultError.invalidImpelement",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase/RxFirebase/Classes/Result.swift",
+      "line": 11,
+      "symbol": "Result.init(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/ikuya/repository/github.com/iKichiemon/RxFirebase"
+}

@@ -9,6 +9,10 @@ This is Firebase extensions for RxSwift.
 
 It is compatible with FirebaseDatabase, Firestore, and FirebaseStorage.
 
+## docs
+
+https://ikichiemon.github.io/RxFirebase/
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

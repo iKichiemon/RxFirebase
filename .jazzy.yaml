@@ -1,0 +1,7 @@
+min_acl: internal
+clean: true
+output: docs
+author: iKichiemon
+author_url: https://github.com/iKichiemon/RxFirebase
+module: RxFirebase
+xcodebuild_arguments: [-workspace,Example/RxFirebase.xcworkspace,-scheme,RxFirebase]
