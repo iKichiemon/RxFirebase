@@ -8,7 +8,7 @@ cache: cocoapods
 podfile: Example/Podfile
 before_install:
  - bundle install --path=vendor/bundle --jobs=4
- - bundle exec pod repo update --silent
+ - bundle exec pod repo update
  - bundle exec pod install --project-directory=Example
 
 script:
