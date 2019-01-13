@@ -1,96 +1,101 @@
 PODS:
-  - BoringSSL (9.2):
-    - BoringSSL/Implementation (= 9.2)
-    - BoringSSL/Interface (= 9.2)
-  - BoringSSL/Implementation (9.2):
-    - BoringSSL/Interface (= 9.2)
-  - BoringSSL/Interface (9.2)
+  - BoringSSL-GRPC (0.0.2):
+    - BoringSSL-GRPC/Implementation (= 0.0.2)
+    - BoringSSL-GRPC/Interface (= 0.0.2)
+  - BoringSSL-GRPC/Implementation (0.0.2):
+    - BoringSSL-GRPC/Interface (= 0.0.2)
+  - BoringSSL-GRPC/Interface (0.0.2)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - Firebase (4.8.1):
-    - Firebase/Core (= 4.8.1)
-  - Firebase/Core (4.8.1):
-    - FirebaseAnalytics (= 4.0.7)
-    - FirebaseCore (= 4.0.14)
-  - Firebase/Database (4.8.1):
+  - Firebase (4.13.0):
+    - Firebase/Core (= 4.13.0)
+  - Firebase/Core (4.13.0):
+    - FirebaseAnalytics (= 4.2.0)
+    - FirebaseCore (= 4.0.20)
+  - Firebase/Database (4.13.0):
     - Firebase/Core
-    - FirebaseDatabase (= 4.1.4)
-  - Firebase/Firestore (4.8.1):
+    - FirebaseDatabase (= 4.1.5)
+  - Firebase/Firestore (4.13.0):
     - Firebase/Core
-    - FirebaseFirestore (= 0.10.0)
-  - Firebase/Storage (4.8.1):
+    - FirebaseFirestore (= 0.11.0)
+  - Firebase/Storage (4.13.0):
     - Firebase/Core
-    - FirebaseStorage (= 2.1.2)
-  - FirebaseAnalytics (4.0.7):
+    - FirebaseStorage (= 2.2.0)
+  - FirebaseAnalytics (4.2.0):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
     - nanopb (~> 0.3)
-  - FirebaseCore (4.0.14):
+  - FirebaseCore (4.0.20):
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
-  - FirebaseDatabase (4.1.4):
-    - FirebaseAnalytics (~> 4.0)
+  - FirebaseDatabase (4.1.5):
+    - FirebaseAnalytics (~> 4.1)
     - FirebaseCore (~> 4.0)
     - leveldb-library (~> 1.18)
-  - FirebaseFirestore (0.10.0):
-    - FirebaseAnalytics (~> 4.0)
+  - FirebaseFirestore (0.11.0):
+    - FirebaseAnalytics (~> 4.1)
     - FirebaseCore (~> 4.0)
     - gRPC-ProtoRPC (~> 1.0)
     - leveldb-library (~> 1.18)
-    - Protobuf (~> 3.1)
-  - FirebaseInstanceID (2.0.8):
+    - Protobuf (~> 3.5)
+  - FirebaseInstanceID (2.0.10):
     - FirebaseCore (~> 4.0)
-  - FirebaseStorage (2.1.2):
-    - FirebaseAnalytics (~> 4.0)
+  - FirebaseStorage (2.2.0):
+    - FirebaseAnalytics (~> 4.1)
     - FirebaseCore (~> 4.0)
     - GTMSessionFetcher/Core (~> 1.1)
-  - GoogleToolboxForMac/Defines (2.1.3)
-  - GoogleToolboxForMac/NSData+zlib (2.1.3):
-    - GoogleToolboxForMac/Defines (= 2.1.3)
-  - gRPC (1.8.4):
-    - gRPC-RxLibrary (= 1.8.4)
-    - gRPC/Main (= 1.8.4)
-  - gRPC-Core (1.8.4):
-    - gRPC-Core/Implementation (= 1.8.4)
-    - gRPC-Core/Interface (= 1.8.4)
-  - gRPC-Core/Implementation (1.8.4):
-    - BoringSSL (~> 9.0)
-    - gRPC-Core/Interface (= 1.8.4)
+  - GoogleToolboxForMac/Defines (2.2.0)
+  - GoogleToolboxForMac/NSData+zlib (2.2.0):
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+  - gRPC (1.17.0):
+    - gRPC-RxLibrary (= 1.17.0)
+    - gRPC/Main (= 1.17.0)
+  - gRPC-Core (1.17.0):
+    - gRPC-Core/Implementation (= 1.17.0)
+    - gRPC-Core/Interface (= 1.17.0)
+  - gRPC-Core/Implementation (1.17.0):
+    - BoringSSL-GRPC (= 0.0.2)
+    - gRPC-Core/Interface (= 1.17.0)
     - nanopb (~> 0.3)
-  - gRPC-Core/Interface (1.8.4)
-  - gRPC-ProtoRPC (1.8.4):
-    - gRPC (= 1.8.4)
-    - gRPC-RxLibrary (= 1.8.4)
+  - gRPC-Core/Interface (1.17.0)
+  - gRPC-ProtoRPC (1.17.0):
+    - gRPC-ProtoRPC/Main (= 1.17.0)
+  - gRPC-ProtoRPC/Main (1.17.0):
+    - gRPC (= 1.17.0)
+    - gRPC-RxLibrary (= 1.17.0)
     - Protobuf (~> 3.0)
-  - gRPC-RxLibrary (1.8.4)
-  - gRPC/Main (1.8.4):
-    - gRPC-Core (= 1.8.4)
-    - gRPC-RxLibrary (= 1.8.4)
-  - GTMSessionFetcher/Core (1.1.12)
+  - gRPC-RxLibrary (1.17.0)
+  - gRPC/Main (1.17.0):
+    - gRPC-Core (= 1.17.0)
+    - gRPC-RxLibrary (= 1.17.0)
+  - GTMSessionFetcher/Core (1.2.1)
   - leveldb-library (1.20)
-  - nanopb (0.3.8):
-    - nanopb/decode (= 0.3.8)
-    - nanopb/encode (= 0.3.8)
-  - nanopb/decode (0.3.8)
-  - nanopb/encode (0.3.8)
-  - Nimble (7.0.3)
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
+  - Nimble (7.3.1)
   - Nimble-Snapshots (6.3.0):
     - Nimble-Snapshots/Core (= 6.3.0)
   - Nimble-Snapshots/Core (6.3.0):
     - FBSnapshotTestCase (~> 2.0)
     - Nimble (~> 7.0)
-  - Protobuf (3.5.0)
-  - Quick (1.2.0)
+  - Protobuf (3.6.1)
+  - Quick (1.3.2)
+  - RxAtomic (4.4.0)
   - RxFirebase (0.1.0):
     - Firebase (~> 4.8)
+    - Firebase/Core (~> 4.8)
     - Firebase/Database (~> 4.8)
     - Firebase/Firestore (~> 4.8)
     - Firebase/Storage (~> 4.8)
     - RxSwift (~> 4.0)
-  - RxSwift (4.1.1)
+  - RxSwift (4.4.0):
+    - RxAtomic (~> 4.4)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
@@ -104,29 +109,30 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BoringSSL: f3d6b8ce199b9c450a8cfc14895d07a2627fc232
+  BoringSSL-GRPC: 2a230d9cd93e7ce39916044f645cebb31f37dde6
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  Firebase: 2721056b8885eef90233b03f37be64358d35d262
-  FirebaseAnalytics: 617afa8c26b57a0c3f11361b248bc9e17bfd8dfd
-  FirebaseCore: 2e0b98fb2d64ca8140136beff15772bdd14d2dd7
-  FirebaseDatabase: de4446507ccd3257fca37d16f40e1540324571fd
-  FirebaseFirestore: 713f0c555e7af5ac03d0fec0e2477c48857f4977
-  FirebaseInstanceID: 81df5805a08001e69138664bdd02c6719a9ac80f
-  FirebaseStorage: 181bb543d39ee3c53e0558de7ba86b1286a0427f
-  GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
-  gRPC: 572520c17b794362388d5c95396329592a3c199b
-  gRPC-Core: af0d4f0a53735e335fccc815c50c0a03da695287
-  gRPC-ProtoRPC: 6596fde8d27e0718d7de1de1dc99a951d832a809
-  gRPC-RxLibrary: f6b1432a667c3354c7b345affed9886c0d4ff549
-  GTMSessionFetcher: ebaa1f79a5366922c1735f1566901f50beba23b7
+  Firebase: 5ec5e863d269d82d66b4bf56856726f8fb8f0fb3
+  FirebaseAnalytics: 7ef69e76a5142f643aeb47c780e1cdce4e23632e
+  FirebaseCore: 90cb1c53d69b556f112a1bf72b5fcfaad7650790
+  FirebaseDatabase: 5f0bc6134c5c237cf55f9e1249d406770a75eafd
+  FirebaseFirestore: e92a096ce80c7b4b905d4e9d41dbd944adc9d2a5
+  FirebaseInstanceID: 8d20d890d65c917f9f7d9950b6e10a760ad34321
+  FirebaseStorage: 0c223481c8f89ed300cf1239ddd2d9833622c65f
+  GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
+  gRPC: 72b71666056dcb12235b5238f0ff5948fd60321a
+  gRPC-Core: 4028031ed2c5267cca0d846c876d8046b1ecb9b6
+  gRPC-ProtoRPC: 94e90774dd0dc089dece93ec22384d8383988f3f
+  gRPC-RxLibrary: f2873a17e8133f66d8ce972f8805aa7a518ae974
+  GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
-  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
-  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
-  Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
-  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
-  RxFirebase: 5502aa8c956e5a8f9bbd99951241b421a325c93b
-  RxSwift: c6e3b1c7b325c7d121cd4327e9d98b7ed746b570
+  Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
+  Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
+  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
+  RxFirebase: b6727ae0cc2becbdad7a18704684a57d147e9926
+  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
 
 PODFILE CHECKSUM: 94dc09f2aa142fefec27453cf517d05a21e25e09
 

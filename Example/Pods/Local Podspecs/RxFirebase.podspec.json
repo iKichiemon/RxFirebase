@@ -19,12 +19,15 @@
     "ios": "8.0"
   },
   "source_files": "RxFirebase/Classes/**/*",
-  "static_framework": true,
+  "public_header_files": "Pod/Classes/**/*.h",
   "dependencies": {
     "RxSwift": [
       "~> 4.0"
     ],
     "Firebase": [
+      "~> 4.8"
+    ],
+    "Firebase/Core": [
       "~> 4.8"
     ],
     "Firebase/Database": [
