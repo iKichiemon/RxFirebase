@@ -10,10 +10,8 @@ before_install:
  - bundle install --path=vendor/bundle --jobs=4
  - bundle exec pod repo update --silent
  - bundle exec pod install --project-directory=Example
- - cd Example
 
 script:
  - pod lib lint
- - cd Example
  - bundle exec fastlane scan
   #- set -o pipefail && xcodebuild test -workspace Example/RxFirebase.xcworkspace -scheme RxFirebase-Example -destination 'platform=iOS Simulator,name=iPhone 5s' ONLY_ACTIVE_ARCH=NO | xcpretty
