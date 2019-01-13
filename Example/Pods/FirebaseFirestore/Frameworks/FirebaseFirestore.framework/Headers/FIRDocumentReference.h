@@ -36,6 +36,8 @@ NS_SWIFT_NAME(DocumentListenOptions)
 
 - (instancetype)init;
 
+@property(nonatomic, assign, readonly) BOOL includeMetadataChanges;
+
 /**
  * Sets the includeMetadataChanges option which controls whether metadata-only changes (i.e. only
  * `FIRDocumentSnapshot.metadata` changed) should trigger snapshot events. Default is NO.
@@ -119,10 +121,8 @@ NS_SWIFT_NAME(DocumentReference)
  * is created. If a document already exists, it is overwritten.
  *
  * @param documentData An `NSDictionary` containing the fields that make up the document
- *     to be written.
- * @param completion A block to execute once the document has been successfully written to the
- *     server. This block will not be called while the client is offline, though local
- *     changes will be visible immediately.
+ * to be written.
+ * @param completion A block to execute once the document has been successfully written.
  */
 - (void)setData:(NSDictionary<NSString *, id> *)documentData
      completion:(nullable void (^)(NSError *_Nullable error))completion;
@@ -135,9 +135,7 @@ NS_SWIFT_NAME(DocumentReference)
  * @param documentData An `NSDictionary` containing the fields that make up the document
  * to be written.
  * @param options A `FIRSetOptions` used to configure the set behavior.
- * @param completion A block to execute once the document has been successfully written to the
- *     server. This block will not be called while the client is offline, though local
- *     changes will be visible immediately.
+ * @param completion A block to execute once the document has been successfully written.
  */
 - (void)setData:(NSDictionary<NSString *, id> *)documentData
         options:(FIRSetOptions *)options
@@ -148,7 +146,7 @@ NS_SWIFT_NAME(DocumentReference)
  * If the document does not exist, the update fails (specify a completion block to be notified).
  *
  * @param fields An `NSDictionary` containing the fields (expressed as an `NSString` or
- *     `FIRFieldPath`) and values with which to update the document.
+ * `FIRFieldPath`) and values with which to update the document.
  */
 - (void)updateData:(NSDictionary<id, id> *)fields;
 
@@ -157,12 +155,9 @@ NS_SWIFT_NAME(DocumentReference)
  * does not exist, the update fails and the specified completion block receives an error.
  *
  * @param fields An `NSDictionary` containing the fields (expressed as an `NSString` or
- *     `FIRFieldPath`) and values with which to update the document.
+ * `FIRFieldPath`) and values with which to update the document.
  * @param completion A block to execute when the update is complete. If the update is successful the
- *     error parameter will be nil, otherwise it will give an indication of how the update failed.
- *     This block will only execute when the client is online and the commit has completed against
- *     the server. The completion handler will not be called when the device is offline, though
- *     local changes will be visible immediately.
+ * error parameter will be nil, otherwise it will give an indication of how the update failed.
  */
 - (void)updateData:(NSDictionary<id, id> *)fields
         completion:(nullable void (^)(NSError *_Nullable error))completion;
@@ -176,9 +171,7 @@ NS_SWIFT_NAME(DocumentReference)
 /**
  * Deletes the document referred to by this `FIRDocumentReference`.
  *
- * @param completion A block to execute once the document has been successfully written to the
- *     server. This block will not be called while the client is offline, though local
- *     changes will be visible immediately.
+ * @param completion A block to execute once the document has been successfully deleted.
  */
 // clang-format off
 - (void)deleteDocumentWithCompletion:(nullable void (^)(NSError *_Nullable error))completion

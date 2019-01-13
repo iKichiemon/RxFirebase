@@ -102,9 +102,9 @@ final fileprivate class ObserveOnSink<O: ObserverType> : ObserverBase<O.E> {
         }
     }
     
-    func run(_ state: (), _ recurse: (()) -> ()) {
+    func run(_ state: Void, recurse: (Void) -> Void) {
         let (nextEvent, observer) = self._lock.calculateLocked { () -> (Event<E>?, O) in
-            if !self._queue.isEmpty {
+            if self._queue.count > 0 {
                 return (self._queue.dequeue(), self._observer)
             }
             else {
@@ -112,7 +112,7 @@ final fileprivate class ObserveOnSink<O: ObserverType> : ObserverBase<O.E> {
                 return (nil, self._observer)
             }
         }
-
+        
         if let nextEvent = nextEvent, !_cancel.isDisposed {
             observer.on(nextEvent)
             if nextEvent.isStopEvent {
@@ -122,17 +122,17 @@ final fileprivate class ObserveOnSink<O: ObserverType> : ObserverBase<O.E> {
         else {
             return
         }
-
+        
         let shouldContinue = _shouldContinue_synchronized()
-
+        
         if shouldContinue {
-            recurse(())
+            recurse()
         }
     }
 
     func _shouldContinue_synchronized() -> Bool {
         _lock.lock(); defer { _lock.unlock() } // {
-            if !self._queue.isEmpty {
+            if self._queue.count > 0 {
                 return true
             }
             else {
@@ -151,7 +151,7 @@ final fileprivate class ObserveOnSink<O: ObserverType> : ObserverBase<O.E> {
 }
 
 #if TRACE_RESOURCES
-    fileprivate var _numberOfSerialDispatchQueueObservables = AtomicInt(0)
+    fileprivate var _numberOfSerialDispatchQueueObservables: AtomicInt = 0
     extension Resources {
         /**
          Counts number of `SerialDispatchQueueObservables`.
@@ -159,7 +159,7 @@ final fileprivate class ObserveOnSink<O: ObserverType> : ObserverBase<O.E> {
          Purposed for unit tests.
          */
         public static var numberOfSerialDispatchQueueObservables: Int32 {
-            return _numberOfSerialDispatchQueueObservables.load()
+            return _numberOfSerialDispatchQueueObservables.valueSnapshot()
         }
     }
 #endif
@@ -170,7 +170,7 @@ final fileprivate class ObserveOnSerialDispatchQueueSink<O: ObserverType> : Obse
 
     let cancel: Cancelable
 
-    var cachedScheduleLambda: (((sink: ObserveOnSerialDispatchQueueSink<O>, event: Event<E>)) -> Disposable)!
+    var cachedScheduleLambda: ((ObserveOnSerialDispatchQueueSink<O>, Event<E>) -> Disposable)!
 
     init(scheduler: SerialDispatchQueueScheduler, observer: O, cancel: Cancelable) {
         self.scheduler = scheduler
@@ -178,13 +178,11 @@ final fileprivate class ObserveOnSerialDispatchQueueSink<O: ObserverType> : Obse
         self.cancel = cancel
         super.init()
 
-        cachedScheduleLambda = { pair in
-            guard !cancel.isDisposed else { return Disposables.create() }
+        cachedScheduleLambda = { sink, event in
+            sink.observer.on(event)
 
-            pair.sink.observer.on(pair.event)
-
-            if pair.event.isStopEvent {
-                pair.sink.dispose()
+            if event.isStopEvent {
+                sink.dispose()
             }
 
             return Disposables.create()
@@ -192,7 +190,7 @@ final fileprivate class ObserveOnSerialDispatchQueueSink<O: ObserverType> : Obse
     }
 
     override func onCore(_ event: Event<E>) {
-        let _ = self.scheduler.schedule((self, event), action: cachedScheduleLambda!)
+        let _ = self.scheduler.schedule((self, event), action: cachedScheduleLambda)
     }
 
     override func dispose() {
@@ -212,7 +210,7 @@ final fileprivate class ObserveOnSerialDispatchQueue<E> : Producer<E> {
 
         #if TRACE_RESOURCES
             let _ = Resources.incrementTotal()
-            let _ = _numberOfSerialDispatchQueueObservables.increment()
+            let _ = AtomicIncrement(&_numberOfSerialDispatchQueueObservables)
         #endif
     }
 
@@ -225,7 +223,7 @@ final fileprivate class ObserveOnSerialDispatchQueue<E> : Producer<E> {
     #if TRACE_RESOURCES
     deinit {
         let _ = Resources.decrementTotal()
-        let _ = _numberOfSerialDispatchQueueObservables.decrement()
+        let _ = AtomicDecrement(&_numberOfSerialDispatchQueueObservables)
     }
     #endif
 }

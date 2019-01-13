@@ -35,7 +35,7 @@ class ViewController: UITableViewController {
             .observe(eventType: .childAdded)
             .subscribeOn(MainScheduler.instance)
             .subscribe(
-                onNext: { [weak self] snapshot in
+                onNext: { [weak self] (snapshot) in
                     self?.comments.append(snapshot)
                     self?.tableView.reloadData()
                 },

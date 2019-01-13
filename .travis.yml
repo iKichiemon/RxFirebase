@@ -8,11 +8,12 @@ cache: cocoapods
 podfile: Example/Podfile
 before_install:
  - bundle install --path=vendor/bundle --jobs=4
-   #- gem install cocoapods --no-rdoc --no-ri --no-document --quiet
  - bundle exec pod repo update --silent
  - bundle exec pod install --project-directory=Example
+ - cd Example
 
 script:
-  set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/RxFirebase.xcworkspace -scheme RxFirebase-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
-  - pod lib lint
+ - pod lib lint
+ - cd Example
+ - bundle exec fastlane scan
   #- set -o pipefail && xcodebuild test -workspace Example/RxFirebase.xcworkspace -scheme RxFirebase-Example -destination 'platform=iOS Simulator,name=iPhone 5s' ONLY_ACTIVE_ARCH=NO | xcpretty
