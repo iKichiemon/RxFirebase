@@ -58,9 +58,9 @@ extension Reactive where Base: DocumentReference {
         }
     }
     
-    public func setData(documentData: [String: Any], options: SetOptions) -> Completable {
+    public func setData(documentData: [String: Any], merge: Bool) -> Completable {
         return .create { observer in
-            self.base.setData(documentData, options: options) {
+            self.base.setData(documentData, merge: merge) {
                 if let error = $0 {
                     observer(.error(error))
                 } else {
@@ -135,12 +135,12 @@ extension Reactive where Base: CollectionReference {
 extension Reactive where Base: Query {
     
     public func addSnapshotListener() -> Observable<QuerySnapshot> {
-        return self.addSnapshotListener(options: nil)
+        return self.addSnapshotListener(includeMetadataChanges: false)
     }
     
-    public func addSnapshotListener(options: QueryListenOptions?) -> Observable<QuerySnapshot> {
+    public func addSnapshotListener(includeMetadataChanges: Bool) -> Observable<QuerySnapshot> {
         return .create { observer in
-            let listener = self.base.addSnapshotListener(options: options) {
+            let listener = self.base.addSnapshotListener(includeMetadataChanges: includeMetadataChanges) {
                 switch Result($0, $1) {
                 case .success(let v): observer.onNext(v)
                 case .failure(let e): observer.onError(e)

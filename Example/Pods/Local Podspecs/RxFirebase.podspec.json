@@ -1,6 +1,6 @@
 {
   "name": "RxFirebase",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "summary": "Extension Firebase for Rx.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/iKichiemon/RxFirebase",
@@ -13,31 +13,29 @@
   },
   "source": {
     "git": "https://github.com/iKichiemon/RxFirebase.git",
-    "tag": "0.2.0"
+    "tag": "0.3.0"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "RxFirebase/Classes/**/*",
   "public_header_files": "Pod/Classes/**/*.h",
+  "static_framework": true,
   "dependencies": {
     "RxSwift": [
-      "< 4.0"
+      "~> 4.4.0"
     ],
     "Firebase": [
-      "< 4.8"
-    ],
-    "Firebase/Core": [
-      "< 4.8"
+      "~> 5.15.0"
     ],
     "Firebase/Database": [
-      "< 4.8"
+      "~> 5.15.0"
     ],
     "Firebase/Storage": [
-      "< 4.8"
+      "~> 5.15.0"
     ],
     "Firebase/Firestore": [
-      "< 4.8"
+      "~> 5.15.0"
     ]
   }
 }
