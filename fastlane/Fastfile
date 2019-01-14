@@ -12,8 +12,13 @@
 default_platform(:ios)
 
 platform :ios do
-  desc "Description of what the lane does"
-  lane :custom_lane do
+  desc "only run build"
+  lane :build do
+    xcodebuild(
+      archive: false,
+      scheme: "RxFirebase-Example",
+      workspace: "Example/RxFirebase.xcworkspace"
+    )
     # add actions here: https://docs.fastlane.tools/actions
   end
 end

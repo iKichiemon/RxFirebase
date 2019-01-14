@@ -5,11 +5,6 @@ PODS:
   - BoringSSL/Implementation (10.0.6):
     - BoringSSL/Interface (= 10.0.6)
   - BoringSSL/Interface (10.0.6)
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
   - Firebase (5.15.0):
     - Firebase/Core (= 5.15.0)
   - Firebase/Core (5.15.0):
@@ -112,16 +107,9 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
-  - Nimble (7.3.1)
-  - Nimble-Snapshots (6.3.0):
-    - Nimble-Snapshots/Core (= 6.3.0)
-  - Nimble-Snapshots/Core (6.3.0):
-    - FBSnapshotTestCase (~> 2.0)
-    - Nimble (~> 7.0)
   - Protobuf (3.6.1)
-  - Quick (1.3.2)
   - RxAtomic (4.4.0)
-  - RxFirebase (0.3.0):
+  - RxFirebase (0.5.0):
     - Firebase (~> 5.15.0)
     - Firebase/Database (~> 5.15.0)
     - Firebase/Firestore (~> 5.15.0)
@@ -131,16 +119,11 @@ PODS:
     - RxAtomic (~> 4.4)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase (~> 2.1.4)
-  - Nimble (~> 7.0)
-  - Nimble-Snapshots (~> 6.3.0)
-  - Quick (~> 1.2)
   - RxFirebase (from `../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - BoringSSL
-    - FBSnapshotTestCase
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuthInterop
@@ -156,10 +139,7 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
-    - Nimble
-    - Nimble-Snapshots
     - Protobuf
-    - Quick
     - RxAtomic
     - RxSwift
 
@@ -169,7 +149,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   BoringSSL: e10f92a27043805c01071fe815a5cd98ae8212e7
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Firebase: 8bb9268bff82374f2cbaaabb143e725743c316ae
   FirebaseAnalytics: c06f9d70577d79074214700a71fd5d39de5550fb
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
@@ -185,14 +164,11 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
-  Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
-  Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
-  Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
-  RxFirebase: adcfc28cab9577ad949060198a9303ab62bda49c
+  RxFirebase: 02e51a0c229a61333f525a2def0854966705e651
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
 
-PODFILE CHECKSUM: 94dc09f2aa142fefec27453cf517d05a21e25e09
+PODFILE CHECKSUM: 16184ec4d2457b96bc3e1a2571428cc926e7e3dd
 
 COCOAPODS: 1.5.3
