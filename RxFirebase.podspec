@@ -36,7 +36,7 @@ TODO: Add long description of the pod here.
   #   'RxFirebase' => ['RxFirebase/Assets/*.png']
   # }
 
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  #s.public_header_files = 'RxFirebase/Classes/**/*.h'
   #s.frameworks = 'UIKit', 'MapKit', 'VectorKit'
   
   s.static_framework = true
