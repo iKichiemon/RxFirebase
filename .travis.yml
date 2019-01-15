@@ -13,7 +13,6 @@ before_install:
 
 script:
  - pod lib lint --quick --allow-warnings
- - bundle exec fastlane scan
   #- set -o pipefail && xcodebuild test -workspace Example/RxFirebase.xcworkspace -scheme RxFirebase-Example -destination 'platform=iOS Simulator,name=iPhone 5s' ONLY_ACTIVE_ARCH=NO | xcpretty
 deploy:
   provider: script
