@@ -11,7 +11,7 @@ It is compatible with FirebaseDatabase, Firestore, and FirebaseStorage.
 
 ## docs
 
-https://ikichiemon.github.io/RxFirebase/
+https://kichiemon.github.io/RxFirebase/
 
 ## Example
 
